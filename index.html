@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>You're Invited! Wedding of Vishnu &amp; Achu</title>
+  
+  <!-- SEO & Standard Meta -->
+  <meta name="description" content="With great joy and happiness, we cordially invite you and your family to the wedding of Vishnu &amp; Achu on December 12, 2026 at Michael Plaza Convention Center, Ramapuram, Keralam.">
+  <meta name="keywords" content="Vishnu, Achu, Wedding Invitation, Save the Date, Michael Plaza Convention Center, Ramapuram, St Marys Auditorium Pulickalkavala">
+  <meta name="theme-color" content="#1B4332">
+
+  <!-- =====================================================================
+       WHATSAPP LINK PREVIEW OPTIMIZATION (Open Graph Meta Tags)
+       ===================================================================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Wedding of Vishnu &amp; Achu">
+  <meta property="og:title" content="You're Invited! Wedding of Vishnu &amp; Achu">
+  <meta property="og:description" content="Join us on Dec 12, 2026 at Michael Plaza Convention Center, Ramapuram.">
+  <meta property="og:image" content="images/wedding-card-preview.jpg">
+  <meta property="og:image:alt" content="Wedding of Vishnu &amp; Achu">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="You're Invited! Wedding of Vishnu &amp; Achu">
+  <meta name="twitter:description" content="Join us on Dec 12, 2026 at Michael Plaza Convention Center, Ramapuram.">
+  <meta name="twitter:image" content="images/wedding-card-preview.jpg">
+
+  <!-- Google Fonts: Playfair Display (Headings) + Poppins (Body text) + Great Vibes (Romance) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Confetti Canvas -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- =====================================================================
+       TOP NAVIGATION BAR
+       ===================================================================== -->
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">
+        <span>V &amp; A</span>
+        <span class="heart">❤️</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#countdown">Countdown</a></li>
+          <li><a href="#events">Ceremony &amp; Reception</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#gallery">Moments</a></li>
+          <li><a href="#events" class="nav-cta">View Itinerary</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       FLOATING ACTION BUTTONS (Music, Confetti, WhatsApp Share)
+       ===================================================================== -->
+  <div class="floating-widgets">
+    <!-- Traditional Tune Synthesizer -->
+    <button class="floating-btn music-btn" id="musicToggleBtn" title="Play Traditional Wedding Tune" aria-label="Play Traditional Tune">
+      <div class="equalizer">
+        <span class="eq-bar"></span>
+        <span class="eq-bar"></span>
+        <span class="eq-bar"></span>
+      </div>
+    </button>
+
+    <!-- Shower Confetti -->
+    <button class="floating-btn" id="celebrateBtn" title="Shower Blessings 🎉" aria-label="Shower Confetti">
+      🎉
+    </button>
+
+    <!-- WhatsApp Share Invitation -->
+    <button class="floating-btn whatsapp-share" id="shareWhatsAppBtn" title="Share Invitation on WhatsApp" aria-label="Share on WhatsApp">
+      📲
+    </button>
+  </div>
+
+  <main>
+    <!-- =====================================================================
+         1. HERO SECTION
+         ===================================================================== -->
+    <section class="hero" id="hero">
+      <div class="hero-ornament-bg"></div>
+
+      <div class="container hero-content">
+        <!-- Monogram Crest -->
+        <div class="hero-crest">
+          <span class="crest-monogram">V &amp; A</span>
+        </div>
+
+        <p class="hero-subheadline">Save the Date</p>
+        <h1 class="hero-headline">Vishnu &amp; Achu Are Getting Married!</h1>
+
+        <!-- Couple Names -->
+        <div class="hero-couple-names">
+          <span>Vishnu</span>
+          <span class="connector">&amp;</span>
+          <span class="hero-heart-pulse">❤️</span>
+          <span>Achu</span>
+        </div>
+
+        <!-- Parents' Names Information Card -->
+        <div class="parents-card">
+          <!-- Groom Side -->
+          <div class="parent-side">
+            <p class="parent-role">Groom</p>
+            <h2 class="parent-person-name">Vishnu</h2>
+            <p class="parent-lineage">S/o Sureshkumar &amp; Reni</p>
+          </div>
+
+          <!-- Bride Side -->
+          <div class="parent-side">
+            <p class="parent-role">Bride</p>
+            <h2 class="parent-person-name">Achu</h2>
+            <p class="parent-lineage">D/o Ravikumar &amp; Thankamma</p>
+          </div>
+        </div>
+
+        <p class="hero-invitation-main">
+          "With great joy and happiness, we cordially invite you and your family to the wedding of Vishnu &amp; Achu."
+        </p>
+
+        <div class="ornate-divider">
+          <span class="ornate-line"></span>
+          <span class="ornate-icon">💍</span>
+          <span class="ornate-line"></span>
+        </div>
+
+        <!-- Quick Hero CTAs -->
+        <div class="hero-actions">
+          <a href="#events" class="btn btn-primary">
+            <span>🗓️</span> View Events &amp; Venues
+          </a>
+          <a href="#contact" class="btn btn-gold">
+            <span>📞</span> Contact Family
+          </a>
+          <a href="#countdown" class="btn btn-outline">
+            <span>⏳</span> Countdown
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         2. LIVE COUNTDOWN TIMER
+         ===================================================================== -->
+    <section class="countdown-section" id="countdown">
+      <div class="container">
+        <p class="section-label">Counting Down the Moments</p>
+        <h2 class="section-title">Until the Auspicious Muhurtham</h2>
+        <p class="section-subtitle" id="countdownSubtitle">
+          Saturday, December 12, 2026 &bull; Muhurtham between 11:00 AM &amp; 11:45 AM
+        </p>
+
+        <!-- Timer Grid -->
+        <div class="timer-grid">
+          <div class="timer-card">
+            <span class="timer-number" id="days">00</span>
+            <span class="timer-label">Days</span>
+          </div>
+          <div class="timer-card">
+            <span class="timer-number" id="hours">00</span>
+            <span class="timer-label">Hours</span>
+          </div>
+          <div class="timer-card">
+            <span class="timer-number" id="minutes">00</span>
+            <span class="timer-label">Minutes</span>
+          </div>
+          <div class="timer-card">
+            <span class="timer-number" id="seconds">00</span>
+            <span class="timer-label">Seconds</span>
+          </div>
+        </div>
+
+        <div class="calendar-sync-row">
+          <button class="calendar-btn" id="addToGoogleCalBtn">
+            <span>🗓️</span> Add Wedding to Google Calendar
+          </button>
+          <a href="#events" class="calendar-btn">
+            <span>📍</span> Get Directions
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         3. EVENT & VENUE BREAKDOWN CARDS
+         ===================================================================== -->
+    <section class="events-section" id="events">
+      <div class="container">
+        <div style="text-align: center;">
+          <p class="section-label">Auspicious Occasion</p>
+          <h2 class="section-title">Events &amp; Venues</h2>
+          <p class="section-subtitle">
+            Please grace both functions with your presence and blessings.
+          </p>
+        </div>
+
+        <div class="events-grid">
+          
+          <!-- EVENT 1: WEDDING CEREMONY -->
+          <article class="event-card featured-event">
+            <div class="event-card-header">
+              <span class="event-badge featured">Sacred Muhurtham</span>
+              <h3 class="event-name">The Wedding Ceremony</h3>
+            </div>
+            <div class="event-card-body">
+              <div class="event-detail-item">
+                <span class="event-icon">📅</span>
+                <div>
+                  <p class="event-info-title">12/12/2026 (Saturday)</p>
+                  <p class="muhurtham-highlight">
+                    <span>✨</span> Muhurtham: Between 11:00 am &amp; 11:45 am
+                  </p>
+                </div>
+              </div>
+
+              <div class="event-detail-item">
+                <span class="event-icon">📍</span>
+                <div>
+                  <p class="event-info-title">Michael Plaza Convention Center</p>
+                  <p class="event-info-desc">Ramapuram, Keralam</p>
+                </div>
+              </div>
+
+              <div class="event-detail-item">
+                <span class="event-icon">🍛</span>
+                <div>
+                  <p class="event-info-title">Wedding Feast</p>
+                  <p class="event-info-desc">Traditional Kerala Sadhya served following the ceremony</p>
+                </div>
+              </div>
+            </div>
+            <div class="event-card-footer">
+              <!-- Direct Google Maps CTA -->
+              <a href="https://www.google.com/maps/search/?api=1&query=Michael+Plaza+Convention+Center+Ramapuram+Kerala" target="_blank" rel="noopener noreferrer" class="btn-maps">
+                <span>📍</span> Open in Google Maps
+              </a>
+            </div>
+          </article>
+
+          <!-- EVENT 2: WEDDING RECEPTION -->
+          <article class="event-card">
+            <div class="event-card-header">
+              <span class="event-badge">Celebration Gathering</span>
+              <h3 class="event-name">Wedding Reception</h3>
+            </div>
+            <div class="event-card-body">
+              <div class="event-detail-item">
+                <span class="event-icon">📅</span>
+                <div>
+                  <p class="event-info-title">13/12/2026 (Sunday)</p>
+                  <p class="muhurtham-highlight">
+                    <span>🎉</span> Evening Celebration
+                  </p>
+                </div>
+              </div>
+
+              <div class="event-detail-item">
+                <span class="event-icon">📍</span>
+                <div>
+                  <p class="event-info-title">St. Mary's Auditorium</p>
+                  <p class="event-info-desc">Pulickalkavala</p>
+                </div>
+              </div>
+
+              <div class="event-detail-item">
+                <span class="event-icon">🍽️</span>
+                <div>
+                  <p class="event-info-title">Dinner &amp; Greetings</p>
+                  <p class="event-info-desc">Join us to congratulate the newly wedded couple</p>
+                </div>
+              </div>
+            </div>
+            <div class="event-card-footer">
+              <!-- Direct Google Maps CTA -->
+              <a href="https://www.google.com/maps/search/?api=1&query=St+Marys+Auditorium+Pulickalkavala" target="_blank" rel="noopener noreferrer" class="btn-maps">
+                <span>📍</span> Open in Google Maps
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         CONTACT HOSTS SECTION (Quick Call Buttons)
+         ===================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <h2 class="contact-title">Have Questions or Need Assistance?</h2>
+          <p class="contact-subtitle">
+            Feel free to contact the hosts directly for directions or accommodation details.
+          </p>
+          <div class="contact-buttons-grid">
+            <a href="tel:9447602408" class="btn-call">
+              <span>📞</span> Call: 9447602408
+            </a>
+            <a href="tel:7034325403" class="btn-call">
+              <span>📞</span> Call: 7034325403
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         4. PHOTO GALLERY SECTION
+         ===================================================================== -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div style="text-align: center;">
+          <p class="section-label">Cherished Memories</p>
+          <h2 class="section-title">Moments of Love</h2>
+          <p class="section-subtitle">
+            Capturing the beautiful journey of Vishnu &amp; Achu.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Photo 1: Hero / Wide -->
+          <div class="gallery-item featured-wide">
+            <img src="images/1.jpeg" alt="Vishnu and Achu" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-text">Vishnu &amp; Achu ❤️</span>
+            </div>
+          </div>
+
+          <!-- Photo 2 -->
+          <div class="gallery-item">
+            <img src="images/2.jpeg" alt="Engagement Portrait" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-text">Together in Love</span>
+            </div>
+          </div>
+
+          <!-- Photo 3 -->
+          <div class="gallery-item">
+            <img src="images/3.jpeg" alt="Happy Smiles" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-text">Joyous Beginnings</span>
+            </div>
+          </div>
+
+          <!-- Photo 4 -->
+          <div class="gallery-item">
+            <img src="images/4.jpeg" alt="Golden Moments" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-text">Golden Hours</span>
+            </div>
+          </div>
+
+          <!-- Photo 5 -->
+          <div class="gallery-item">
+            <img src="images/5.jpeg" alt="Cherished Smiles" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-text">Precious Moments</span>
+            </div>
+          </div>
+
+          <!-- Photo 6 -->
+          <div class="gallery-item">
+            <img src="images/6.jpeg" alt="Traditional Elegance" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-text">Traditional Grace</span>
+            </div>
+          </div>
+
+          <!-- Photo 7 -->
+          <div class="gallery-item">
+            <img src="images/7.jpeg" alt="Sunset Love" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-text">Forever &amp; Always</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous Photo">&#10094;</button>
+      <div class="lightbox-content">
+        <img src="" alt="Wedding Photo Preview" class="lightbox-img" id="lightboxImg">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+      </div>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next Photo">&#10095;</button>
+    </div>
+
+
+
+    <!-- =====================================================================
+         BLESSINGS & WISHES WALL
+         ===================================================================== -->
+    <section class="wishes-section" id="wishes">
+      <div class="container">
+        <div style="text-align: center;">
+          <p class="section-label">With Heartfelt Love</p>
+          <h2 class="section-title">Blessings &amp; Wishes</h2>
+          <p class="section-subtitle">
+            Warm greetings showered upon Vishnu &amp; Achu by family and friends.
+          </p>
+        </div>
+
+        <div class="wishes-list" id="wishesList">
+          <!-- Dynamically populated from script.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================================
+       FOOTER
+       ===================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-monogram">V &amp; A</div>
+      <p class="footer-quote">
+        "Thank you for being an indispensable part of our special day."
+      </p>
+
+      <p class="footer-family-note">
+        Warmly invited by:
+        <br>
+        <strong>Sureshkumar &amp; Reni</strong> &bull; <strong>Ravikumar &amp; Thankamma</strong>
+      </p>
+
+      <div class="footer-credits">
+        Wedding of Vishnu &amp; Achu &bull; December 12, 2026 &bull; Ramapuram, Keralam
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
